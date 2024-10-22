@@ -7,23 +7,55 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
         }
         h1 {
-            margin-top: 20px;
+            margin: 20px 0; 
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
         iframe {
-            width: 80%;
-            height: 480px;
-            max-width: 100%;
+            width: 70vw; 
+            height: 40vw; 
+            max-width: 960px;
+            max-height: 540px; 
+            border: none;
+        }
+        .description-box {
+            width: 70vw;
+            max-width: 960px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <h1>Video de Presentación</h1>
-    <iframe src="https://drive.google.com/file/d/16Q0SbRgtOEdHPB2kKyd7RNYvSDmAUUh5/preview" allow="autoplay" allowfullscreen></iframe>
+    <div class="container">
+        <iframe src="https://drive.google.com/file/d/16Q0SbRgtOEdHPB2kKyd7RNYvSDmAUUh5/preview" allow="autoplay" allowfullscreen></iframe>
+        <div class="description-box">
+            <h2>Descripción del Video</h2>
+            <p>Este video muestra una presentación de una aplicacion web de un gestor de tareas con registro e inicio de sesión, permite crear, editar y borrar proyectos, asignarles tareas a los proyectos, taambien puedes elegir que usuario en especifico tiene que hacer la tarea y el proyecto y pueden actualizar el estado de la tarea los mismos usuarios, hay dos roles el de admin y el de usuario, solo el admin puede gestionar los proyectos y tareas los usuarios unicamente pueden marcar como completado la tarea.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
